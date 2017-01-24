@@ -1,0 +1,35 @@
+body {
+  background-image: url("../img/restaurant_icons.png");
+}
+
+h1 {
+  text-align: center;
+}
+
+.custom-textarea{
+  text-align: center;
+}
+
+.custom-image {
+  text-align: center;
+}
+
+.custom-columns {
+  text-align: center;
+}
+
+.to-be-eaten {
+  border: 1px solid black;
+  height: 40px;
+  width: 100%;
+}
+
+.eaten {
+  border: 1px solid black;
+  height: 40px;
+  width: 100%;
+}
+
+.column-headers{
+  text-align: center;
+}

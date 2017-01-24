@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="row">
+    <div class="custom-image">
+      <img src="/assets/img/burger.png" width=300px height=300px>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1>Eat-Da-Burger</h1>
+</div>
+<div class ="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <h4 class="column-headers">Order Up!</h4>
+      {{#each burger}}
+        {{#unless this.devoured}}
+        <div class="custom-columns to-be-eaten">
+            <p>{{this.id}}. {{this.burger_name}}</p>
+
+          </div>
+          {{/unless}}
+        {{/each}}
+        </div>
+        <div class="col-lg-4">
+          <br><br>
+            {{#each burger}}
+              {{#unless this.devoured}}
+              <div class="custom-columns">
+                <form action="/{{this.id}}?_method=PUT" method="POST">
+
+                  <input type="hidden" name="burgerName" value="{{this.burger_name}}">
+                  <button type="submit">Devour It!</button>
+                </form>
+              </div>
+              <br>
+            {{/unless}}
+          {{/each}}
+        </div>
+
+    <div class="col-lg-4">
+      <h4 class="column-headers">Another Satisfied Customer</h4>
+        {{#each burger}}
+          {{#if this.devoured}}
+          <div class="custom-columns eaten">
+            <p>{{this.id}}. {{this.burger_name}}</p>
+            </div>
+          {{/if}}
+        {{/each}}
+
+
+    </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="container">
+  <div class="custom-textarea">
+    <form action="/" method="POST">
+      <div class="form-group">
+        <textarea rows="4" cols="50" name="name"></textarea>
+      </div>
+
+      <button type="submit">Order a Burger</button>
+    </form>
+  </div>
+</div>
+<br><br>

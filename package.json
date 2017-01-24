@@ -1,0 +1,33 @@
+{
+  "name": "burger-sequelize",
+  "version": "1.0.0",
+  "description": "An order taking app using Node.js, Sequelize, and MySQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ehirshfield/burger-sequelize.git"
+  },
+  "keywords": [
+    "Sequelize",
+    "MySQL",
+    "Node.js"
+  ],
+  "author": "Eric Hirshfield-Yamanishi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ehirshfield/burger-sequelize/issues"
+  },
+  "homepage": "https://github.com/ehirshfield/burger-sequelize#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.7",
+    "sequelize": "^3.29.0",
+    "sequelize-cli": "^2.5.1"
+  }
+}
